@@ -4,7 +4,7 @@
 		Improper Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
 		</ShortDescription>
 		<LongDescription>
-		…
+		...
 		</LongDescription>
 		<Finding NativeID=”12345” Source=”IBM Rational AppScan 7.0” IdentifiedTimestamp=”12/14/2010 3:42:16 AM -06:00”>
 			<SurfaceLocation url=”http://www.site.com/Login.aspx” source=”Parameter” value=”txtUser”>
@@ -15,6 +15,7 @@
 		Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
 		</ShortDescription>
 		<LongDescription>
+		...
 		</LongDescription>
 		<Finding NativeID=”23456” Source=”Microsoft CAT.NET”>
 			<DataFlowElement SourceFileName=”C:\Projects\Site\Web\Login.aspx.cs” LineNumber=”12” ColumnNumber=”61” Sequence=”0”>
