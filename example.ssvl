@@ -1,6 +1,10 @@
 <?xml version="1.0"?>
-<Vulnerabilities SpecVersion="0.2" ApplicationTag="PRODUCTION_20110115" ExportTimestamp="2/13/2011 1:45:30 AM -06:00">
-	<Vulnerability CWE="89" Severity="Critical">
+<Vulnerabilities SpecVersion="0.2"
+        ApplicationTag="PRODUCTION_20110115"
+        ExportTimestamp="2/13/2011 1:45:30 AM -06:00"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="ssvl.xsd">
+	<Vulnerability CWE="89" Severity="Medium">
 		<ShortDescription>
 		Improper Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
 		</ShortDescription>
@@ -11,7 +15,7 @@
 			<SurfaceLocation url="http://www.site.com/Login.aspx" source="Parameter" value="txtUser"/>
 		</Finding>
 	</Vulnerability>
-	<Vulnerability CWE="79" Severity="High">
+	<Vulnerability CWE="79" Severity="Critical">
 		<ShortDescription>
 		Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
 		</ShortDescription>
