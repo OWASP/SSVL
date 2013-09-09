@@ -23,9 +23,9 @@
 		...
 		</LongDescription>
 		<Finding NativeID="23456" Source="Microsoft CAT.NET">
-            <LongDescription>
+            <FindingDescription>
             ...
-            </LongDescription>
+            </FindingDescription>
 			<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="12" ColumnNumber="61" Sequence="0">
 				<LineText>
 				    String sql = “SELECT * FROM [User] WHERE Username = ‘“ + txtUser.Text + “’";
