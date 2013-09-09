@@ -1,41 +1,42 @@
-<Vulnerabilities SpecVersion=”0.2” ApplicationTag=”PRODUCTION_20110115” ExportTimestamp=”2/13/2011 1:45:30 AM -06:00”>
-	<Vulnerability CWE=”89” Severity=”CRITICAL”>
+<?xml version="1.0"?>
+<Vulnerabilities SpecVersion="0.2" ApplicationTag="PRODUCTION_20110115" ExportTimestamp="2/13/2011 1:45:30 AM -06:00">
+	<Vulnerability CWE="89" Severity="Critical">
 		<ShortDescription>
 		Improper Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
 		</ShortDescription>
 		<LongDescription>
 		...
 		</LongDescription>
-		<Finding NativeID=”12345” Source=”IBM Rational AppScan 7.0” IdentifiedTimestamp=”12/14/2010 3:42:16 AM -06:00”>
-			<SurfaceLocation url=”http://www.site.com/Login.aspx” source=”Parameter” value=”txtUser”>
+		<Finding NativeID="12345" Source="IBM Rational AppScan 7.0" IdentifiedTimestamp="12/14/2010 3:42:16 AM -06:00">
+			<SurfaceLocation url="http://www.site.com/Login.aspx" source="Parameter" value="txtUser"/>
 		</Finding>
 	</Vulnerability>
-	<Vulneraility CWE=”79” Severity=”HIGH”>
+	<Vulnerability CWE="79" Severity="High">
 		<ShortDescription>
 		Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
 		</ShortDescription>
 		<LongDescription>
 		...
 		</LongDescription>
-		<Finding NativeID=”23456” Source=”Microsoft CAT.NET”>
-			<DataFlowElement SourceFileName=”C:\Projects\Site\Web\Login.aspx.cs” LineNumber=”12” ColumnNumber=”61” Sequence=”0”>
+		<Finding NativeID="23456" Source="Microsoft CAT.NET">
+			<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="12" ColumnNumber="61" Sequence="0">
 				<LineText>
-				    String sql = “SELECT * FROM [User] WHERE Username = ‘“ + txtUser.Text + “’”;
+				    String sql = “SELECT * FROM [User] WHERE Username = ‘“ + txtUser.Text + “’";
 				</LineText>
 			</DataFlowElement>
-			<DataFlowElement SourceFileName=”C:\Projects\Site\Web\Login.aspx.cs” LineNumber=”17” Sequence=”1”>
+			<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="17" Sequence="1">
 				<LineText>
 				    cmd = new SqlCommand(sql);
 				</LineText>
 			</DataFlowElement>
-			<DataFlowElement SourceFileName=”C:\Projects\Site\Web\Login.aspx.cs” LineNumber=”22” Sequence=”2”>
+			<DataFlowElement SourceFileName="C:\Projects\Site\Web\Login.aspx.cs" LineNumber="22" Sequence="2">
 				<LineText>
 				    reader = cmd.ExecuteReader();
 				</LineText>
 			</DataFlowElement>
 		</Finding>
-	<Vulnerability>
-	<Vulnerability CWE=”285” Severity=”HIGH”>
+	</Vulnerability>
+	<Vulnerability CWE="285" Severity="High">
 		<ShortDescription>
 		Improper Improper Access Control (Authorization)
 		</ShortDescription>
@@ -45,8 +46,8 @@
 		by adding authorization checks in the page to verify that the statement referred to by the StatementID
 		parameter is also tied to the logged-in user.
 		</LongDescription>
-		<Finding NativeID=”345678” Source=”Manual Application Assessment”>
-			<SurfaceLocation url=”http://www.site.com/ViewStatement.aspx” source=”Parameter” value=”StatementID”>
+		<Finding NativeID="345678" Source="Manual Application Assessment">
+			<SurfaceLocation url="http://www.site.com/ViewStatement.aspx" source="Parameter" value="StatementID"/>
 		</Finding>
 	</Vulnerability>
 </Vulnerabilities>
