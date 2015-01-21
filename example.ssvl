@@ -4,7 +4,7 @@
         ExportTimestamp="2/13/2011 1:45:30 AM -06:00"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="ssvl.xsd">
-	<Vulnerability CWE="89" Severity="Medium">
+	<Vulnerability CWE="89" Severity="Medium" IssueID="TEST-321">
 		<ShortDescription>
 		Improper Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')
 		</ShortDescription>
@@ -43,7 +43,7 @@
 			</DataFlowElement>
 		</Finding>
 	</Vulnerability>
-	<Vulnerability CWE="285" Severity="High">
+	<Vulnerability CWE="285" Severity="High" IssueID="TEST-123">
 		<ShortDescription>
 		Improper Improper Access Control (Authorization)
 		</ShortDescription>
